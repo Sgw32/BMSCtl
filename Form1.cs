@@ -88,6 +88,9 @@ namespace BMSCtl
             textBox35.Text = (((currentData[99] << 8) | currentData[100])).ToString();
             textBox34.Text = (((currentData[101] << 8) | currentData[102])).ToString();
 
+            textBox45.Text = (((currentData[76] << 16) | (currentData[77] << 8) | currentData[78]) / 1000.0).ToString();
+            textBox46.Text = (((currentData[80] << 16) | (currentData[81] << 8) | currentData[82]) / 1000.0).ToString();
+
             byte xorsum = 0;
             for (int i=0;i!=140;i++)
             {
@@ -338,7 +341,7 @@ namespace BMSCtl
 
         public void Log(string logMessage)
         {
-            w.WriteLine(DateTime.Now+"\t"+logMessage);
+            w.WriteLine(DateTime.Now+";"+wrCnt.ToString()+";"+ logMessage);
             wrCnt += 1;
         }
 
@@ -359,6 +362,14 @@ namespace BMSCtl
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            byte[] send_data = new byte[6];
+            send_data[0] = 0xDB;
+            send_data[1] = 0xDB;
+            send_data[2] = 0x00;
+            send_data[3] = 0x00;
+            send_data[4] = 0x00;
+            send_data[5] = 0x00;
+            serialPort1.Write(send_data,0,6);
             string message = textBox2.Text + ";"
                             + textBox3.Text + ";"
                             + textBox4.Text + ";"
@@ -367,8 +378,11 @@ namespace BMSCtl
                             + textBox8.Text + ";"
                             + textBox7.Text + ";"
                             + textBox6.Text + ";"
+                            + textBox13.Text + ";"
+                            + textBox12.Text + ";"
                             + textBox43.Text + ";"
                             + textBox44.Text + ";"
+                            + textBox46.Text + ";"
                             + textBox39.Text + ";"
                             + textBox38.Text + ";"
                             + textBox37.Text + ";"

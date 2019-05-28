@@ -87,16 +87,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(1288, 260);
+            this.button1.Location = new System.Drawing.Point(1366, 260);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 23);
             this.button1.TabIndex = 0;
@@ -113,7 +119,7 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(1442, 134);
+            this.textBox1.Size = new System.Drawing.Size(1520, 134);
             this.textBox1.TabIndex = 1;
             // 
             // statusStrip1
@@ -123,7 +129,7 @@
             this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 293);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1466, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1544, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -547,7 +553,7 @@
             this.groupBox3.Controls.Add(this.textBox44);
             this.groupBox3.Location = new System.Drawing.Point(1235, 13);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(204, 100);
+            this.groupBox3.Size = new System.Drawing.Size(126, 100);
             this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ток/Напряжение";
@@ -557,7 +563,7 @@
             this.textBox43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox43.Location = new System.Drawing.Point(12, 19);
             this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(186, 31);
+            this.textBox43.Size = new System.Drawing.Size(99, 31);
             this.textBox43.TabIndex = 35;
             this.textBox43.Text = "0";
             // 
@@ -566,14 +572,14 @@
             this.textBox44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox44.Location = new System.Drawing.Point(12, 56);
             this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(186, 31);
+            this.textBox44.Size = new System.Drawing.Size(99, 31);
             this.textBox44.TabIndex = 38;
             this.textBox44.Text = "0";
             // 
             // textBox40
             // 
-            this.textBox40.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox40.Location = new System.Drawing.Point(1149, 262);
+            this.textBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox40.Location = new System.Drawing.Point(1188, 262);
             this.textBox40.Name = "textBox40";
             this.textBox40.Size = new System.Drawing.Size(100, 20);
             this.textBox40.TabIndex = 42;
@@ -583,7 +589,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1072, 264);
+            this.label1.Location = new System.Drawing.Point(1111, 264);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 43;
@@ -603,7 +609,7 @@
             // textBox41
             // 
             this.textBox41.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox41.Location = new System.Drawing.Point(966, 263);
+            this.textBox41.Location = new System.Drawing.Point(1005, 263);
             this.textBox41.Name = "textBox41";
             this.textBox41.Size = new System.Drawing.Size(100, 20);
             this.textBox41.TabIndex = 45;
@@ -648,11 +654,61 @@
             this.label4.TabIndex = 49;
             this.label4.Text = "label4";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.textBox45);
+            this.groupBox4.Controls.Add(this.textBox46);
+            this.groupBox4.Location = new System.Drawing.Point(1367, 13);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(165, 100);
+            this.groupBox4.TabIndex = 50;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Ёмкость";
+            // 
+            // textBox45
+            // 
+            this.textBox45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox45.Location = new System.Drawing.Point(90, 19);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.Size = new System.Drawing.Size(69, 31);
+            this.textBox45.TabIndex = 35;
+            this.textBox45.Text = "0";
+            // 
+            // textBox46
+            // 
+            this.textBox46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox46.Location = new System.Drawing.Point(90, 56);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(69, 31);
+            this.textBox46.TabIndex = 38;
+            this.textBox46.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 31);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Номинал:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(18, 63);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Остаток:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 315);
+            this.ClientSize = new System.Drawing.Size(1544, 315);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -680,6 +736,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -745,6 +803,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox textBox46;
     }
 }
 
