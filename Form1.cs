@@ -161,7 +161,7 @@ namespace BMSCtl
 
         private bool checkIntegrity(byte[] data)
         {
-            if ((data[139]==0)|| (data[138] == 0)|| (data[137] == 0)|| (data[136] == 0))
+            if ((data[139]==0)|| (data[138] == 0)|| (data[136] == 0)|| (data[136] == 0))
                     return false;
             if ((data[135] != 0) || (data[134] != 0) || (data[133] != 0) || (data[132] != 0))
                 return false;
